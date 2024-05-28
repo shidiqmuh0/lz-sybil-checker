@@ -15,10 +15,10 @@ function checkAddress() {
     const isSybil = sybilAddresses.some(addressObj => addressObj.evm.toLowerCase() === addressInput.toLowerCase());
 
     if (isSybil) {
-        resultElement.textContent = 'The address is a Sybil address.';
+        resultElement.textContent = 'The address is Reported by TrustGo (Rumor).';
         resultElement.style.color = 'red';
     } else {
-        resultElement.textContent = 'The address is NOT a Sybil address.';
+        resultElement.textContent = 'The address is NOT Reported by TrustGo (Rumor).';
         resultElement.style.color = 'green';
     }
 }
