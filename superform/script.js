@@ -15,7 +15,9 @@ function checkAllocation() {
 
     if (found) {
         resultDiv.innerHTML = `Address: ${found.address}<br>Allocation: ${found.allocation}`;
+        resultDiv.style.color = 'green';
     } else {
         resultDiv.innerHTML = 'Address not found!';
+        resultDiv.style.color = 'red';
     }
 }
