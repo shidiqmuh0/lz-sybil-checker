@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LayerZero Sybil Address Checker</title>
+    <script>
+        var text = " LayerZero Sybil Address Checker |";
+        var speed = 500; // kecepatan gerakan dalam milidetik (200ms = 0.2s)
+
+        function moveTitle() {
+            document.title = text;
+            text = text.substring(1) + text.charAt(0);
+        }
+
+        // Mengatur interval untuk memanggil moveTitle setiap 'speed' milidetik
+        setInterval(moveTitle, speed);
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
